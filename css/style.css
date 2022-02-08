@@ -315,7 +315,7 @@ img, svg {
 	z-index: 1;
 	opacity: 0.5;
 	transition: 0.5s;
- 	overflow-x: hidden;
+	overflow: auto;
 	background-color: #000;
 }
 .sidenav {

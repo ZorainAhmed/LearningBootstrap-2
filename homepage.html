@@ -9,8 +9,8 @@
     	<link rel="stylesheet" href="./css/style.css">
 	</head>
 
-	<body>
-		<nav class="navbar navbar-light bg-light navi">
+	<body id="mainBody">
+		<nav class="navbar fixed-top navbar-light bg-light navi">
   			<div class="container-fluid" >
   				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
       				<span class="navbar-toggler-icon" onclick="openNav(); openOverlay()"></span>
@@ -40,7 +40,7 @@
       		<a href="#careers">Careers</a>
     	</div>
     	</nav>
-		<div class="container ">
+		<div class="container mt-5">
 			<div class="row mt-3">
             	<div class="col-2 col-sm-auto">
             		<div class="img-wrap">
@@ -293,15 +293,19 @@
 		<script type="text/javascript">
 			function openNav() {
   				document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("mainBody").style.overflow = "hidden";
 			}
 			function openSubNav() {
   				document.getElementById("mySubSidenav").style.width = "250px";
+          document.getElementById("mainBody").style.overflow = "hidden";
 			}
 			function closeNav() {
   				document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("mainBody").style.overflow = "auto";
 			}
 			function closeSubNav() {
   				document.getElementById("mySubSidenav").style.width = "0";
+          document.getElementById("mainBody").style.overflow = "auto";
 			}
 			function openOverlay(){
 				document.getElementById("bg-overlay").style.width = "100%";
