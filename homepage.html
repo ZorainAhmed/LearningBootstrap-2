@@ -13,7 +13,7 @@
 		<nav class="navbar navbar-light bg-light navi">
   			<div class="container-fluid" >
   				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-      				<span class="navbar-toggler-icon" onclick="openNav()"></span>
+      				<span class="navbar-toggler-icon" onclick="openNav(); openOverlay()"></span>
     			</button>
     		</div>
     		<!-- <div class="col-auto">
@@ -21,10 +21,10 @@
       				<input  type="search" placeholder="Type the glass or mirror product you are looking for" aria-label="Search">
       				<button class="btn btn-outline-success" type="submit">Search</button>
     			</form>
-  			</div> -->
-  		
+  			</div> -->	
+  		<div id="bg-overlay" class="overlay"></div>
   		<div id="mySidenav" class="sidenav">
-  			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  			<a href="javascript:void(0)" class="closebtn" onclick="closeNav();closeOverlay()">&times;</a>
   			<a href="#">Home</a>
   			<a class="subnavbtn" onclick="openSubNav()">About<i class="fa fa-caret-left"></i></a>
   			<a href="#">Services</a>
@@ -34,7 +34,7 @@
 		<div id="mySubSidenav" class="sidenav">
 			<span style=" display: block; color: #818181; text-decoration: underline; cursor: pointer;" onclick="closeSubNav()"> Go Back</span>
 			<hr style="color: white">
-  			<a href="javascript:void(0)" class="closebtn" onclick="closeSubNav();closeNav()">&times;</a>
+  			<a href="javascript:void(0)" class="closebtn" onclick="closeSubNav();closeNav();closeOverlay()">&times;</a>
       		<a href="#company">Company</a>
       		<a href="#team">Team</a>
       		<a href="#careers">Careers</a>
@@ -83,7 +83,7 @@
         		</div>        		
         	</div>
 
-        	<div class="row justify-content-between mt-5">
+        	<!-- <div class="row justify-content-between mt-5">
         		<div class="col-12 col-sm-3 ">
         			<div class="img-wrap-card">
         				<img src="./img/gym2.jpg" class="rounded float-left " alt="gymimg1" >
@@ -105,8 +105,37 @@
         			<h6 class="my-3" style="padding-left: 56px">HD Workout Mirror</h6>
         			<p class="ps-3 px-lg-3"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus praesentium labore accusamus sequi, voluptate debitis tenetur in deleniti possimus modi voluptatum neque maiores dolorem unde? Aut dolorum quod excepturi fugit. </p>
         		</div>
+        	</div> -->
+        	<div class="row justify-content-evenly">
+        		<div class="col-md-6 col-lg-6 col-xl-4">
+        			<div class="card text-center" >
+  						<img src="./img/gym2.jpg" class="card-img-top" alt="gymimg1">
+  						<div class="card-body">
+    						<h5 class="card-title">Clear Glass</h5>
+    						<p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus praesentium labore accusamus sequi, voluptate debitis tenetur in deleniti possimus modi voluptatum neque maiores dolorem unde?</p>
+  						</div>
+					</div>
+        		</div>
+        		<div class="col-md-6 col-lg-6 col-xl-4">
+        			<div class="card text-center" >
+  						<img src="./img/gym2.jpg" class="card-img-top" alt="gymimg1">
+  						<div class="card-body">
+    						<h5 class="card-title">Clear Glass</h5>
+    						<p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus praesentium labore accusamus sequi, voluptate debitis tenetur in deleniti possimus modi voluptatum neque maiores dolorem unde?</p>
+  						</div>
+					</div>
+        		</div>
+        		<div class="col-md-6 col-lg-6 col-xl-4">
+        			<div class="card text-center">
+  						<img src="./img/gym2.jpg" class="card-img-top" alt="gymimg1">
+  						<div class="card-body">
+    						<h5 class="card-title">Clear Glass</h5>
+    						<p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus praesentium labore accusamus sequi, voluptate debitis tenetur in deleniti possimus modi voluptatum neque maiores dolorem unde?</p>
+  						</div>
+					</div>
+        		</div>	
         	</div>
-
+        	
         	<div class="row justify-content-center mt-5">
         		<div class="col-auto">
         			<h3>Applications of Workout Mirror</h3>
@@ -116,7 +145,7 @@
         		</div>
         	</div>
 
-        	<div class="row justify-content-between mt-5">
+        	<!-- <div class="row justify-content-between mt-5">
         		<div class="col-12 col-sm-3 mx-4">
         			<div class="img-wrap-card">
         				<img src="./img/gym2.jpg" class="rounded float-left" alt="gymimg1" >
@@ -159,8 +188,66 @@
         			<h6 class="my-3" style="padding-left: 56px">HD Workout Mirror</h6>
         			<p class="ps-3 px-lg-3"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus praesentium labore accusamus sequi, voluptate debitis tenetur in deleniti possimus modi voluptatum neque maiores dolorem unde?</p>
         		</div>
+        	</div> -->
+        	<div class="row justify-content-evenly">
+        		<div class="col-md-6 col-lg-6 col-xl-4">
+        			<div class="card text-center" >
+  						<img src="./img/gym2.jpg" class="card-img-top" alt="gymimg1">
+  						<div class="card-body">
+    						<h5 class="card-title">Clear Glass</h5>
+    						<p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus praesentium labore accusamus sequi, voluptate debitis tenetur in deleniti possimus modi voluptatum neque maiores dolorem unde?</p>
+  						</div>
+					</div>
+        		</div>
+        		<div class="col-md-6 col-lg-6 col-xl-4">
+        			<div class="card text-center" >
+  						<img src="./img/gym2.jpg" class="card-img-top" alt="gymimg1">
+  						<div class="card-body">
+    						<h5 class="card-title">Clear Glass</h5>
+    						<p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus praesentium labore accusamus sequi, voluptate debitis tenetur in deleniti possimus modi voluptatum neque maiores dolorem unde?</p>
+  						</div>
+					</div>
+        		</div>
+        		<div class="col-md-6 col-lg-6 col-xl-4">
+        			<div class="card text-center">
+  						<img src="./img/gym2.jpg" class="card-img-top" alt="gymimg1">
+  						<div class="card-body">
+    						<h5 class="card-title">Clear Glass</h5>
+    						<p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus praesentium labore accusamus sequi, voluptate debitis tenetur in deleniti possimus modi voluptatum neque maiores dolorem unde?</p>
+  						</div>
+					</div>
+        		</div>	
         	</div>
-
+        	<div class="row justify-content-evenly">
+        		<div class="col-md-6 col-lg-6 col-xl-4">
+        			<div class="card text-center" >
+  						<img src="./img/gym2.jpg" class="card-img-top" alt="gymimg1">
+  						<div class="card-body">
+    						<h5 class="card-title">Clear Glass</h5>
+    						<p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus praesentium labore accusamus sequi, voluptate debitis tenetur in deleniti possimus modi voluptatum neque maiores dolorem unde?</p>
+  						</div>
+					</div>
+        		</div>
+        		<div class="col-md-6 col-lg-6 col-xl-4">
+        			<div class="card text-center" >
+  						<img src="./img/gym2.jpg" class="card-img-top" alt="gymimg1">
+  						<div class="card-body">
+    						<h5 class="card-title">Clear Glass</h5>
+    						<p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus praesentium labore accusamus sequi, voluptate debitis tenetur in deleniti possimus modi voluptatum neque maiores dolorem unde?</p>
+  						</div>
+					</div>
+        		</div>
+        		<div class="col-md-6 col-lg-6 col-xl-4">
+        			<div class="card text-center">
+  						<img src="./img/gym2.jpg" class="card-img-top" alt="gymimg1">
+  						<div class="card-body">
+    						<h5 class="card-title">Clear Glass</h5>
+    						<p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus praesentium labore accusamus sequi, voluptate debitis tenetur in deleniti possimus modi voluptatum neque maiores dolorem unde?</p>
+  						</div>
+					</div>
+        		</div>	
+        	</div>
+        	
         	<div class="row mt-5 boxed1" >
         		<div class="col-12 col-sm-6 pt-4">
   					<h3 class="mb-3">Wide Range of Mirrors at Glass Genius</h3>
@@ -215,6 +302,12 @@
 			}
 			function closeSubNav() {
   				document.getElementById("mySubSidenav").style.width = "0";
+			}
+			function openOverlay(){
+				document.getElementById("bg-overlay").style.width = "100%";
+			}
+			function closeOverlay(){
+				document.getElementById("bg-overlay").style.width = "0%";
 			}
 		</script>
 	</body>

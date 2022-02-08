@@ -222,18 +222,7 @@ img, svg {
 	height: 16px;
 }
 
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-}
+
 
 
 .sidenav a {
@@ -317,4 +306,27 @@ img, svg {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+}
+.overlay{
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	z-index: 1;
+	opacity: 0.5;
+	transition: 0.5s;
+ 	overflow-x: hidden;
+	background-color: #000;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
 }
