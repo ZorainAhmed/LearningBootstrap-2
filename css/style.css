@@ -41,6 +41,7 @@ body{
 	.img-wrap2{
     	width: 325px;
     	height: 250px;
+    	margin-left: auto;
 	}  
 }
 @media only screen and (min-width: 768px){
